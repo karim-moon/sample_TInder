@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             recycle.layoutManager = it
         }
 
-
+        val commit = mutableListOf<ImageDataClass>()
         val myRes = MyContent(this).myResolver?.use {
             val displayNameCol = it.getColumnIndexOrThrow(MediaStore.Images.ImageColumns.DISPLAY_NAME)
             val dataCol = it.getColumnIndexOrThrow(MediaStore.Images.ImageColumns.DATA)
